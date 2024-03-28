@@ -1,4 +1,18 @@
-let form = document.querySelector("#pre-admission-form-1");
+let submit_button = document.querySelector("input[type='submit']");
+
+const postal_code_input = document.querySelector("input[name=code_postal]")
+postal_code_input.addEventListener("input", (e) => {
+    const value = postal_code_input.value;
+
+    const disabled = value.length !== 5 || [...value].some((e) => {
+        return /[0-9]/.exec(e) == null;
+    });
+
+    submit_button.disabled = disabled;
+
+
+});
+
 
 form.addEventListener("submit", (e) => {
     const postal_code_input = document.querySelector("input[name=code_postal]")

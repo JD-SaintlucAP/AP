@@ -11,7 +11,8 @@ $SECURITY_SECRETARY_LEVEL->authorize();
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/static/js/forms_checks/pre_admission/form-0-check.js" defer></script>
 </head>
 
 <body class="bg-white">
@@ -66,7 +67,7 @@ $SECURITY_SECRETARY_LEVEL->authorize();
                 </select>
             </div>
 
-            <input type="submit" class="w-full p-2 bg-blue-500 text-white rounded cursor-pointer" />
+            <input type="submit" class="w-full p-2 enabled:bg-blue-400 enabled:hover:bg-blue-500 text-white rounded disabled:hover:cursor-not-allowed disabled:bg-gray-200" />
         </form>
     </div>
 </body>

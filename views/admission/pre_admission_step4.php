@@ -26,11 +26,11 @@ $SECURITY_SECRETARY_LEVEL->authorize();
         utils\relay_post();
         ?>
         <div class="mb-4">
-            <label for="ci_recto" class="block text-sm font-semibold text-gray-600">Carte d'identité (recto)</label>
+            <label for="ci_recto" class="block text-sm font-semibold text-gray-600">Carte d'identité recto</label>
             <input type="file" name="ci_recto" required class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500" />
         </div>
         <div class="mb-4">
-            <label for="ci_verso" class="block text-sm font-semibold text-gray-600">Carte d'identité (verso)</label>
+            <label for="ci_verso" class="block text-sm font-semibold text-gray-600">Carte d'identité verso</label>
             <input type="file" name="ci_verso" required class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500" />
         </div>
         <div class="mb-4">
