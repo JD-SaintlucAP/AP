@@ -35,6 +35,7 @@
                             <input class="pas border rounded p-2 w-full" type="password" name="password" placeholder="Votre Mot De Passe">
                         </div>
                     </div>
+                    
                     <img src="/gen_captcha.php" class="mb-4" /> <br>
                     <input type="text" name="captcha_answer" class="input_1 border rounded p-2 mb-4 w-full" placeholder="Captcha" /> <br>
                     <button type="submit" class="button bg-blue-500 text-white py-2 px-4 rounded">Connexion</button>
