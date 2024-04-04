@@ -4,12 +4,12 @@ namespace lib\db;
 
 use PDO;
 
-$host = "localhost:8889";
+$host = "localhost:3306";
 
 $db = new PDO(
     "mysql:host=$host;dbname=LPFS;charset=utf8",
     "root",
-    "root",
+    "Sio2021",
     [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION],
 );
 
